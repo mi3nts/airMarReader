@@ -1,7 +1,7 @@
 # airMarReader
 
 ## Sample Data Output
-$HCHDT,274.7,T*2F
+$HCHDT,274.7,T*2F <\br>
 $WIMWV,261.0,R,1.4,N,A*23
 $GPGGA,,,,,,0,,,,,,,,*66
 $GPVTG,,,,,,,,,N*30
