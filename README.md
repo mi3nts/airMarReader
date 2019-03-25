@@ -9,6 +9,4 @@ $GPZDA,,,,*48</br>
 $WIMDA,29.3882,I,0.9952,B,20.9,C,,,40.0,,6.7,C,,,,,,,,*40</br>
 $YXXDR,C,,C,WCHR,C,,C,WCHT,C,,C,HINX,P,0.9952,B,STNP*4C</br>
 $YXXDR*4F</br>
-$HCHDT,274.4,T*2C</br>
-$WIMWV,263.6,R,1.4,N,A*27</br>
 
