@@ -72,7 +72,7 @@ def WIMWVWrite(sensorData,dateTime):
     sensorName = "WIMWV"
     dataLength = 6
     print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
-    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1]))):
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
         sensorDictionary = OrderedDict([
                 ("dateTime"       ,str(dateTime)),
         	("windAngle"      ,dataOut[1]),
