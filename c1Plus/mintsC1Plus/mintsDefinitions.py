@@ -9,7 +9,7 @@ def findAirMarPort():
         if(currentPort.find("PID=067B")>=0):
             return(p[0])
 
-dataFolder            = "/media/teamlary/Team_Lary_1/gitGubRepos/data/mintsData"
+dataFolder            = "/home/teamlary/gitHubRepos/data/mintsData"
 airMarPort            = findAirMarPort()
-macAddress            = get_mac_address(interface="docker0").replace(":","") # XU4
+macAddress            = get_mac_address(interface="eth0").replace(":","") # XU4
 latestOff             = True
