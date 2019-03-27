@@ -25,4 +25,6 @@ sudo usermod -a -G dialout teamlary
 ```
 
 - Write to folders owned by teamlary
-`/home/teamlary/gitHubRepos/
+```
+/home/teamlary/gitHubRepos/
+```
