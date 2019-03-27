@@ -93,10 +93,10 @@ def GPGGAWrite(sensorData,dateTime):
     gpsQuality = dataOut[6]
 
     print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
-    if(len(dataOut) ==(dataLength +1)):
+    if(len(dataOut) ==(dataLength +1) and gpsQuality>0):
         sensorDictionary = OrderedDict([
                 ("dateTime"              ,str(dateTime)),
-        	    ("UTCTimeStamp"          ,dataOut[1]),
+        	("UTCTimeStamp"          ,dataOut[1]),
             	("latitude"              ,dataOut[2]),
                 ("latDirection"          ,dataOut[3]),
                 ("longitude"             ,dataOut[4]),
