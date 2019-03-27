@@ -13,12 +13,16 @@ $YXXDR*4F</br>
 ## User Previledges 
 - Udev Rules 
 sudoedit /etc/udev/rules.d/50-mintsusb.rules</br>
+```
 KERNEL=="ttyUSB[0-9]*",MODE="0666"
 KERNEL=="ttyACM[0-9]*",MODE="0666"
+```
 
 - Sudo Previledges 
+```
 sudo usermod -a -G sudo teamlary
 sudo usermod -a -G dialout teamlary
+```
 
 - Write to folders owned by teamlary
-/home/teamlary/gitHubRepos/
+`/home/teamlary/gitHubRepos/
