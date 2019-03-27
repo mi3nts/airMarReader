@@ -90,8 +90,8 @@ def GPGGAWrite(sensorData,dateTime):
     dataOut    = sensorData.replace('*',',').split(',')
     sensorName = "GPGGA"
     dataLength = 15
-    gpsQuality = dataOut[6]
-
+    gpsQuality = int(dataOut[6])
+	
     print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
     if((len(dataOut) == (dataLength +1)) and (gpsQuality>0)):
         sensorDictionary = OrderedDict([
