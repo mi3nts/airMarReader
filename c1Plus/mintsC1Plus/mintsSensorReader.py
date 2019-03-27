@@ -57,7 +57,7 @@ def HCHDTWrite(sensorData,dateTime):
     sensorName = "HCHDT"
     dataLength = 3
     print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
-    if(len(dataOut) ==(dataLength +1)):
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
         sensorDictionary = OrderedDict([
                 ("dateTime"    ,str(dateTime)),
         	    ("heading"      ,dataOut[1]),
@@ -72,10 +72,10 @@ def WIMWVWrite(sensorData,dateTime):
     sensorName = "WIMWV"
     dataLength = 6
     print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
-    if(len(dataOut) ==(dataLength +1)):
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1]))):
         sensorDictionary = OrderedDict([
                 ("dateTime"       ,str(dateTime)),
-        	    ("windAngle"      ,dataOut[1]),
+        	("windAngle"      ,dataOut[1]),
             	("WAReference"    ,dataOut[2]),
                 ("windSpeed"      ,dataOut[3]),
             	("WSUnits" ,       dataOut[4]),
@@ -121,12 +121,12 @@ def GPVTGWrite(sensorData,dateTime):
     dataLength = 10
     gpsQuality = dataOut[6]
     print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
-    if(len(dataOut) ==(dataLength +1)):
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])) ):
         sensorDictionary = OrderedDict([
                 ("dateTime"               ,str(dateTime)),
-        	    ("courseOGTrue"           ,dataOut[1]),
+        	("courseOGTrue"           ,dataOut[1]),
             	("relativeToTN"           ,dataOut[2]),
-	            ("courseOGMagnetic"       ,dataOut[3]),
+	        ("courseOGMagnetic"       ,dataOut[3]),
                 ("relativeToMN"           ,dataOut[4]),
                 ("speedOverGroundKnots"   ,dataOut[5]),
             	("SOGKUnits"              ,dataOut[6]),
@@ -142,7 +142,7 @@ def GPZDAWrite(sensorData,dateTime):
     sensorName = "GPZDA"
     dataLength = 5
     print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
-    if(len(dataOut) ==(dataLength +1)):
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
         sensorDictionary = OrderedDict([
                 ("dateTime"              ,str(dateTime)),
         	    ("UTCTimeStamp"          ,dataOut[1]),
@@ -160,7 +160,7 @@ def WIMDAWrite(sensorData,dateTime):
     sensorName = "WIMDA"
     dataLength = 21
     print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
-    if(len(dataOut) ==(dataLength +1)):
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
         sensorDictionary = OrderedDict([
                 ("dateTime"                        ,str(dateTime)),
         	    ("barrometricPressureMercury"      ,dataOut[1]),
@@ -194,7 +194,7 @@ def YXXDRWrite(sensorData,dateTime):
     sensorName = "YXXDR"
     dataLength = 17
     print(sensorName+"-"+str(dataLength)+"-"+str(len(dataOut)))
-    if(len(dataOut) ==(dataLength +1)):
+    if(len(dataOut) ==(dataLength +1) and bool(dataOut[1])):
         sensorDictionary = OrderedDict([
                 ("dateTime"                       ,str(dateTime)),
         	    ("temperature"                    ,dataOut[1]),
