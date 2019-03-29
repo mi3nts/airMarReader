@@ -1,4 +1,4 @@
-# airMarReader
+#Mints Data Logger C1 Plus 
 
 ## Sample Data Output
 $HCHDT,274.7,T*2F </br>
