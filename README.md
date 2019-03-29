@@ -1,5 +1,6 @@
-#Mints Data Logger C1 Plus 
+# Mints Data Logger C1 Plus 
 
+## Air Mar Reader 
 ## Sample Data Output
 $HCHDT,274.7,T*2F </br>
 $WIMWV,261.0,R,1.4,N,A*23</br>
