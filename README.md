@@ -30,5 +30,50 @@ sudo usermod -a -G dialout teamlary
 /home/teamlary/gitHubRepos/
 ```
 
-## Naneos Reader 
-### Sample Data Output
+# Wiring 
+
+## Airmar 
+Inspired from [this link](https://www.fondriest.com/pdf/airmar_wx_manual.pdf)
+
+| Airmar      | Connection    |
+| ----------- | ------------- |
+| 1) Red      | V+: 12 V      |
+| 2) Black    | Ground:0 V    |
+| 3) White    | TX            |
+| 4) Bare     |               |
+| 5) Bare     | Shield        |
+| 6) Bare     |               |
+| 7) Yellow   | RX            |
+| 8) Orange   | No Connection |
+| 9) Blue     | No Connection |
+| 10) Bare    | Shield        |
+
+Connect Blue and Orange togeather. On the rs232 cable make sure the ground is common. 
+
+## 	USB-RS232-WE-1800-BT_5.0 
+Inspired from [this link](https://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_USB_RS232_CABLES.pdf)
+
+| Airmar      | Connection    |
+| ----------- | ------------- |
+| 1) Red      | V+: 12 V      |
+| 2) Black    | Ground:0 V    |
+| 3) White    | TX            |
+| 4) Bare     |               |
+| 5) Bare     | Shield        |
+| 6) Bare     |               |
+| 7) Yellow   | RX            |
+| 8) Orange   | No Connection |
+| 9) Blue     | No Connection |
+| 10) Bare    | Shield        |
+
+
+
+
+
+
+
+
+
+
+
+
