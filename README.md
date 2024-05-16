@@ -35,36 +35,32 @@ sudo usermod -a -G dialout teamlary
 ## Airmar 
 Inspired from [this link](https://www.fondriest.com/pdf/airmar_wx_manual.pdf)
 
-| Airmar      | Connection    |
-| ----------- | ------------- |
-| 1) Red      | V+: 12 V      |
-| 2) Black    | Ground:0 V    |
-| 3) White    | TX            |
-| 4) Bare     |               |
-| 5) Bare     | Shield        |
-| 6) Bare     |               |
-| 7) Yellow   | RX            |
-| 8) Orange   | No Connection |
-| 9) Blue     | No Connection |
-| 10) Bare    | Shield        |
+| Airmar      | Connection    | USB-RS232   | Connection     |
+| ----------- | ------------- | ----------- | -------------  |
+| 1) Red      | V+: 12 V      | NC          |                |  
+| 2) Black    | Ground:0 V    | 1) Black    | Ground:0 V     |
+| 3) White    | TX            | 5) Yellow   | RX             |
+| 4) Bare     |               | NC          |                | 
+| 5) Bare     | Shield        | NC          |                | 
+| 6) Bare     |               | NC          |                | 
+| 7) Yellow   | RX            | 4) Orange   | TX             |
+| 8) Orange   | No Connection | NC          |                | 
+| 9) Blue     | No Connection | NC          |                | 
+| 10) Bare    | Shield        | NC          |                | 
 
-Connect Blue and Orange togeather. On the rs232 cable make sure the ground is common. 
+Connect Blue and Orange togeather. On the rs232 cable make sure the ground is common. 12V must be supplied to the aimar seperately.
 
 ## 	USB-RS232-WE-1800-BT_5.0 
 Inspired from [this link](https://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_USB_RS232_CABLES.pdf)
 
-| Airmar      | Connection    |
-| ----------- | ------------- |
-| 1) Red      | V+: 12 V      |
-| 2) Black    | Ground:0 V    |
-| 3) White    | TX            |
-| 4) Bare     |               |
-| 5) Bare     | Shield        |
-| 6) Bare     |               |
-| 7) Yellow   | RX            |
-| 8) Orange   | No Connection |
-| 9) Blue     | No Connection |
-| 10) Bare    | Shield        |
+| USB-RS232   | Connection     |
+| ----------- | -------------- |
+| 1) Black    | Ground:0 V     |
+| 2) Brown    | CTS#           |
+| 3) Red      | V+ 0,3.3 or 5V | 
+| 4) Orange   | TX             |
+| 5) Yellow   | RX             |
+| 6) Green    | RTS #          |
 
 
 
