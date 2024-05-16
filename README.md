@@ -49,7 +49,7 @@ Inspired from [this link](https://www.fondriest.com/pdf/airmar_wx_manual.pdf)
 | 10) Bare    | Shield        | NC          |                | 
 
 Connect Blue and Orange togeather. On the rs232 cable make sure the ground is common. 12V must be supplied to the aimar seperately.
-
+**NC: No Connection**
 ## 	USB-RS232-WE-1800-BT_5.0 
 Inspired from [this link](https://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_USB_RS232_CABLES.pdf)
 
