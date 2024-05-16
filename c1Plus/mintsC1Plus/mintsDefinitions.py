@@ -11,5 +11,5 @@ def findAirMarPort():
 
 dataFolder            = "/home/teamlary/gitHubRepos/data/mintsData/reference"
 airMarPort            = findAirMarPort()
-macAddress            = get_mac_address(interface="eth0").replace(":","") # XU4
+macAddress            = "LKMAC"
 latestOff             = True
